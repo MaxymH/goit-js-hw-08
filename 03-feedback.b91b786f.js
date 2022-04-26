@@ -16,4 +16,4 @@ var n,t=arguments[3],r=require("buffer").Buffer;(function(){var r,e=200,u="Unsup
 },{"buffer":"dskh"}],"TTyb":[function(require,module,exports) {
 var e=require("lodash");const a=document.querySelector(".feedback-form"),t=a.email,l=a.message,s=()=>{const e={email:t.value,message:l.value};e&&localStorage.setItem("feedback-form-state",JSON.stringify({allValue:e}))},r=e.throttle(s,500);t.addEventListener("input",r),l.addEventListener("input",r);const o=e=>{e.preventDefault();const a={email:t.value,message:l.value};console.log(a),e.currentTarget.reset()};a.addEventListener("submit",o);const n=()=>{const e=localStorage.getItem("feedback-form-state"),a=JSON.parse(e);e&&(t.value=a.allValue.email,l.value=a.allValue.message)};n();
 },{"lodash":"B1iE"}]},{},["TTyb"], null)
-//# sourceMappingURL=/parcel-project-template/03-feedback.b91b786f.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.b91b786f.js.map
